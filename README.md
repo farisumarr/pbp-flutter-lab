@@ -1,16 +1,34 @@
 # counter_7
 
-A new Flutter project.
+Muhammad Faris Umar Rahman - 2106702402
 
-## Getting Started
+**Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.**
 
-This project is a starting point for a Flutter application.
+ Stateful widget adalah widget yang bersifat dinamis yang bisa berubah ketika pengguna melakukan interaksi. Stateless widget adalah widget yang bersifat statis dan tidak akan ada perubahan
+ 
+**Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.**
 
-A few resources to get you started if this is your first Flutter project:
+ - Scaffold : Sebagai layar utama aplikasi
+ - AppBar : Untuk meletakkan judul aplikasi
+ - Center : Untuk meletakkan elemen di tengah
+ - Column : Untuk layouting
+ - Text : Untuk menampilkan string
+ - Stack : Untuk meletakkan FloatingActionButton
+ - Positioned : Untuk memosisikan FloatingActionButton
+ - FloatingActionButton : Untuk meng-handle aksi dari user
+ 
+**Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.**
+ 
+ Fungsi dari setState() adalah memberi tahu framework bahwa ada perubahan status sehingga framework menjadwalkan re-build untuk perubahan ini. Variabel _counter saat dilakukan increment atau decrement
+ 
+**Jelaskan perbedaan antara const dengan final.**
+ 
+ const mengharuskan variabel harus dinialisasi (memiliki nilai) pada saat kompilasi, final tidak mengharuskan variabel dinialisasi (memiliki nilai) pada saat kompilasi.
+ 
+**Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Melakukan command flutter create counter_7
+2. Menambahkan FloatingActionButton dengan icon remove, lalu positioning dan layouting kedua button yang ada
+3. Mengatur aksi yang dilakukan oleh button dengan icon remove dengan menambah method decrement
+4. Mengatur teks sesuai soal (Genap/Ganjil, Biru/Merah)
+5. Menambahkan kondisi untuk button decrement terkait pengerjaan bonus
